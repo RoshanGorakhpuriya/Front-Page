@@ -1,24 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import LandingPage from './Component/LandingPage';
+import SecondPage from './Component/SecondPage';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <LandingPage
+        productName="Product Name"
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In volutpat vehicula quam, at rutrum metus vulputate egestas. Praesent diam quam,"
+        additionalText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In volutpat vehicula quam,"
+      />
+
+      <SecondPage/>
+    
+ </div>
   );
 }
 
